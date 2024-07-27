@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <link rel="stylesheet" href="kenangan.css">
+</head>
+
+<body>
+
+    <div class="container"> 
+
+        <div class="slide" style="background-image: url('FOTO/p1');">
+        </div>
+
+        <div class="slide" style="background-image: url('FOTO/p2.jpg');">
+        </div>
+
+        <div class="slide" style="background-image: url('FOTO/p3.jpg');">
+        </div>
+
+        <div class="slide" style="background-image: url('FOTO/p4.jpg');">
+        </div>
+
+        <div class="slide" style="background-image: url('FOTO/p5.jpg');">
+        </div>
+
+        <div class="slide" style="background-image: url('FOTO/p6.jpg');">
+        </div>
+
+        <div class="slide" style="background-image: url('FOTO/p7.jpg');">
+        </div>
+
+        <div class="slide" style="background-image: url('FOTO/p8.jpg');">
+        </div>
+
+        <div class="slide" style="background-image: url('FOTO/p9.JPG');">
+        </div>
+
+        <div class="slide" style="background-image: url('FOTO/p10.JPG');">
+        </div>
+
+    </div>
+
+<div class="beranda">
+    <div class="tombol">
+        <a href="video.html">NEXT</a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        activeslideimg();
+
+        function activeslideimg(activeSlide = 2) {
+            const slides = document.querySelectorAll(".slide");
+
+            slides[activeSlide].classList.add("active");
+
+            for (const slide of slides) {
+                slide.addEventListener("click", () => {
+                    clearActiveClasses();
+
+                    slide.classList.add("active");
+                });
+            }
+
+
+            function clearActiveClasses() {
+                slides.forEach((slide) => {
+                    slide.classList.remove("active");
+                })
+            }
+
+
+        }
+    </script>
+
+</body>
+
+</html>

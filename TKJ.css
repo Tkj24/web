@@ -1,0 +1,99 @@
+*,html,body{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: white;
+}
+
+
+.beranda{
+    color: black;
+    background: url('FOTO/1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.beranda .walpaper h1 {
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.beranda .walpaper h2 {
+  font-size: 30px;
+  color: rgb(247, 247, 249);
+  font-weight: 700;
+}
+
+.beranda .walpaper p {
+  font: 16px;
+  margin: 25px 10px;
+}
+
+.beranda .tombol {
+  width: 345px; 
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tombol a {
+  position: relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 100%;
+        background: white;
+        border: 2px solid black;
+        border-radius: 8px;
+        font-size: 16px;
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-inde x: 1;
+        overflow: hidden;
+        transition: .5s;
+
+}
+
+ .tombol a:hover {
+  color: rgb(5, 165, 251);
+ }
+
+ .tombol a:nth-child(2) {
+  background: transparent;
+  color:  black;
+  }
+
+  .tombol a:nth-child(2):hover {
+      color: white;
+
+  }
+  
+  .tombol a:hover:before  {
+      background: black;
+  }
+
+
+
+  .tombol a:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(251, 4, 4);
+  z-index: -1;
+  transition: .5s;
+  }
+
+  .tombol a:hover: before {
+          width: 100%;
+  }

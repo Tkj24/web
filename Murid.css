@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(76, 148, 236);
+}
+
+
+h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.sampulfoto {
+    width: 1000px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+}
+ .foto {
+    background-color: white;
+    border-radius: 10%;
+    padding: 20px;
+    width: 32%;
+    box-sizing: border-box;
+    margin: 20px;
+ }
+
+ .foto .siswa img {
+    width: 100%;
+ }
+
+ .kata {
+    text-align: center;
+  
+ }
+ 
+  .beranda .tombol {
+    width: 345px; 
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+  }
+  
+  .tombol a {
+        position: relative;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 150px;
+          height: 100%;
+          background: white;
+          border: 2px solid black;
+          border-radius: 8px;
+          font-size: 19px;
+          color: black;
+          text-decoration: none;
+          font-weight: 600;
+          letter-spacing: 1px;
+          z-inde x: 1;
+          overflow: hidden;
+          transition: .5s;
+
+  }
+   .tombol a:hover {
+    color: rgb(5, 165, 251);
+   }
+  
+   .tombol a:nth-child(2) {
+    background: transparent;
+    color:  black;
+    }
+  
+    .tombol a:nth-child(2):hover {
+        color: white;
+  
+    }
+    
+    .tombol a:hover:before  {
+        background: black;
+    }
+  
+  
+  
+    .tombol a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(251, 4, 4);
+    z-index: -1;
+    transition: .5s;
+    }
+  
+    .tombol a:hover: before {
+            width: 100%;
+    }
+  
+
+    
